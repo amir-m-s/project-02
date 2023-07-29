@@ -13,3 +13,11 @@ body {
     direction: rtl;
     font-size: 62.5%;
 }
+
+:root {
+    --primary-background: #FFFFFF;
+    --secondary-background: #EEF0F4;
+    --foreground-color: #662C92;
+    --icons-color: #F3D47A;
+    --text-color: #212121;
+}

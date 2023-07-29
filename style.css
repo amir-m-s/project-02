@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'Yekan';
+	src: url( './fonts/Yekan.eot' );
+	src: url( './fonts/Yekan.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( './fonts/Yekan.woff2' ) format( 'woff2' ),
+		url( './fonts/Yekan.woff' ) format( 'woff' ),
+		url( './fonts/Yekan.ttf' ) format( 'truetype' ),
+		url( './fonts/Yekan.svg#Yekan' ) format( 'svg' );
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +25,7 @@ body {
     direction: rtl;
     font-size: 62.5%;
     color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Yekan",Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -44,13 +56,15 @@ ul {
     align-items: center;
     background: var(--foreground-color);
     color: var(--secondary-background);
-    padding: 1rem 3rem;
+    padding: 0.5rem 3rem;
     font-size: 1rem;
 }
 
 .top-bar-col {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon {

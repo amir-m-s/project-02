@@ -5,6 +5,10 @@
     border: none;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 body {
     direction: rtl;
     font-size: 62.5%;

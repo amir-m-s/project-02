@@ -12,6 +12,8 @@ html {
 body {
     direction: rtl;
     font-size: 62.5%;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -20,4 +22,47 @@ body {
     --foreground-color: #662C92;
     --icons-color: #F3D47A;
     --text-color: #212121;
+}
+
+a, span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--foreground-color);
+    color: var(--secondary-background);
+    padding: 1rem 3rem;
+    font-size: 1rem;
+}
+
+.top-bar-col {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    color: var(--icons-color);
+}
+
+.social-icons ul {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 1rem;
+}
+
+#header a:hover {
+    color: var(--icons-color);
 }

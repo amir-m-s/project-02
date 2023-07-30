@@ -316,3 +316,21 @@ input {
     color: var(--foreground-color);
     font-weight: bold;
 }
+
+.why-card {
+    max-width: 20vw;
+    padding: 1rem;
+    text-align: center;
+}
+
+.why-card img {
+    max-width: 100%;
+}
+
+.why-card h3 {
+    font-size: 1rem;
+}
+
+.why-card p {
+    font-size: 0.8rem;
+}

@@ -244,3 +244,36 @@ input {
     font-size: 1rem;
     font-weight: bold;
 }
+
+.suggested-courses {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.course-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    background: var(--secondary-background);
+}
+
+.course-text span {
+    color: var(--foreground-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.course-text h2 {
+    font-size: 1.5rem;
+}
+
+.course-img {
+    /* max-height: 100%; */
+}
+
+.course-img img {
+    max-width: 100%;
+}

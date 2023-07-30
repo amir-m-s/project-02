@@ -146,3 +146,100 @@ input {
     background: hsl(45, 83%, 80%);
     border: 1px solid hsl(45, 83%, 80%);
 }
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.banner {
+    background: var(--secondary-background);
+    padding: 2rem 0;
+}
+
+.banner .banner-text {
+    max-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+}
+
+.banner-text p {
+    font-size: 1rem;
+}
+
+.banner .banner-text span {
+    color: var(--foreground-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.courses-btn a{
+    background: var(--foreground-color);
+    color: var(--primary-background);
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+.courses-btn a:hover {
+    background: var(--icons-color);
+    color: var(--foreground-color);
+}
+
+.banner-img {
+    position: relative;
+}
+
+.banner-img img {
+    max-width: 30vw;
+}
+
+.feedback {
+    position: absolute;
+    background: #FFFFFF;
+    bottom: 15%;
+    right: -35%;
+    padding: 1rem;
+    border-radius: 0.6rem;;
+}
+
+.star-logo {
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background: var(--icons-color);
+    color: var(--foreground-color);
+    border-radius: 50%;
+    top: -20%;
+    right: -5%;
+}
+
+.score {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.user-feedback {
+    font-size: 1rem;
+    font-weight: bold;
+}

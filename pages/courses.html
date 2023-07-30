@@ -70,6 +70,12 @@
                     <option value="طراحی گرافیک">طراحی گرافیک</option>
                     <option value="موسیقی">موسیقی</option>
                 </select>
+
+                <label>قیمت</label>
+                <input id="price-range-input" type="range" min="0" max="4000000" value="4000000"  step="50000" onmousemove="get_price()" onchange="get_price()">
+                <div class="price-range" id="price-range">
+                    <span>4000000</span> تومان
+                </div>
             </section>
             <section class="res">
                 <div class="res-card">
@@ -250,4 +256,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/script.js"></script>
 </html>

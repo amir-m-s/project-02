@@ -26,6 +26,26 @@
     flex: 0 0 25vw;
 }
 
+.filter label {
+    font-size: 1rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+.filter select {
+    font-family: inherit;
+    width: 60%;
+}
+
+.filter input[type="range"] {
+    direction: ltr;
+    width: 60%;
+}
+
+.filter .price-range {
+    font-size: 1rem;
+}
+
 .res .res-card {
     background: var(--primary-background);
     box-shadow: var(--shadow);

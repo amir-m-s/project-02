@@ -97,6 +97,7 @@ input {
     padding: 0.5rem 3rem;
     align-items: baseline;
     top: 0;
+    z-index: 100;
 }
 
 .logo img {

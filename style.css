@@ -34,6 +34,7 @@ body {
     --foreground-color: #662C92;
     --icons-color: #F3D47A;
     --text-color: #212121;
+    --shadow: -1px 9px 15px -8px rgba(0,0,0,0.75);
 }
 
 a, span {
@@ -276,4 +277,42 @@ input {
 
 .course-img img {
     max-width: 100%;
+}
+
+.content-slider {
+    padding: 2rem;
+    background: var(--secondary-background);
+}
+
+.slider-container {
+    padding: 1rem 0;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+
+.slide {
+
+}
+
+.card {
+    background: var(--primary-background);
+    padding: 1rem 0.5rem;
+    border-radius: 1rem 0 1rem 0;
+    box-shadow: -1px 9px 15px -8px rgba(0,0,0,0.75);
+}
+
+.card img {
+    max-width: 20vw;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.card .slider-price {
+    font-size: 0.8rem;
+    color: var(--foreground-color);
+    font-weight: bold;
 }

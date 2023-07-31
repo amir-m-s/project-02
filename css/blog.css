@@ -1,0 +1,149 @@
+:root {
+    --primary-background: #FFFFFF;
+    --secondary-background: #EEF0F4;
+    --foreground-color: #662C92;
+    --icons-color: #F3D47A;
+    --text-color: #212121;
+    --shadow: -1px 9px 15px -8px rgba(0,0,0,0.75);
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts {
+    display: flex;
+    flex-basis: 65vw;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.postcard {
+    border: 1px solid hsl(0, 0%, 90%);
+    box-shadow: var(--shadow);
+    border-radius: 0.7rem;
+    max-width: 43%;
+}
+
+.postcard-img img {
+    max-width: 100%;
+}
+
+.postcard h2 {
+    padding: 0.5rem;
+}
+
+.postcard .post-info {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 50%)
+}
+
+.postcard .postcard-content {
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+}
+
+.postcard-content {
+    font-size: 0.8rem;
+}
+
+.postcard-footer {
+    padding: 0 1rem 0.5rem;
+    color: #FFFFFF;
+}
+
+.postcard-footer .readmore-btn a {
+    background: var(--foreground-color);
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.postcard-footer .readmore-btn a:hover {
+    background: hsl(274, 54%, 55%);
+}
+
+.sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-card {
+    margin-block: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    padding-block: 1rem;
+}
+
+.side-card h4 {
+    font-size: 1.1rem;
+}
+
+.side-card input[type="text"] {
+    width: 55%;
+    padding: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--secondary-background);
+}
+
+.side-card input[type="text"]:focus {
+    background: hsl(274, 54%, 90%);
+}
+
+.side-card input[type="button"] {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--secondary-background);
+}
+
+.side-card input[type="button"]:hover {
+    background: hsl(274, 54%, 90%);
+}
+
+.side-card ul {
+    padding: 1rem;
+    text-align: right;
+    font-size: 0.85rem;
+}
+
+.pagination {
+    display: flex;
+    width: 100%;
+    direction: ltr;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.pagination ul {
+    display: flex;
+}
+
+.pagination li {
+    padding: 1rem;
+    background: var(--foreground-color);
+    color: #FFFFFF;
+    transition: 0.25s ease-in-out;
+}
+
+.active {
+    background: var(--icons-color) !important;
+    color: var(--foreground-color) !important;
+}
+
+.pagination li:hover {
+    background: var(--icons-color);
+    color: #662C92;
+}
+
+.pagination a {
+    display: block;   
+}

@@ -270,9 +270,6 @@ input {
     font-size: 1.5rem;
 }
 
-.course-img {
-    /* max-height: 100%; */
-}
 
 .course-img img {
     max-width: 100%;
@@ -290,9 +287,6 @@ input {
     gap: 1rem;
 }
 
-.slide {
-
-}
 
 .card {
     background: var(--primary-background);

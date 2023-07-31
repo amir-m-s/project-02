@@ -10,6 +10,7 @@
 .body {
     display: flex;
     justify-content: space-between;
+    margin-top: 4rem;
 }
 
 .posts {
@@ -75,7 +76,7 @@
 }
 
 .side-card {
-    margin-block: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     box-shadow: var(--shadow);
     padding-block: 1rem;

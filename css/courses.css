@@ -33,6 +33,7 @@
 }
 
 .filter select {
+    border: 1px solid hsl(0, 0%, 80%);
     font-family: inherit;
     width: 60%;
 }

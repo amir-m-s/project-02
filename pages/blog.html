@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Header top bar -->
+    <header id="header">
+        <div class="top-bar">
+            <div class="top-bar-col">
+                <div class="phone">
+                    <i class="fa fa-phone icon"></i>
+                    021-88606060
+                </div>
+                <div class="email">
+                    <i class="fa fa-at icon"></i>
+                    email@website.com
+                </div>
+            </div>
+            <div class="top-bar-col">
+                <div class="signin">
+                    <a href="#">ورود</a> / <a href="#">ثبت نام</a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram icon"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook icon"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin icon"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-telegram icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of header top bar -->
+
+    <!-- Nav bar -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="#"><h1>نام سایت</h1></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="جستجو در سایت">
+            <button><i class="fa fa-search fa-2x"></i></button>
+        </div>
+        <ul class="menu">
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">دوره ها</a></li>
+            <li><a href="#">وبلاگ</a></li>
+            <li><a href="#">مدرس شوید</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+    <!-- End of navbar -->
+    <section class="body">
+        <section class="mg-blk-3 container flex space-between">
+            <section class="filter">
+                <label for="category">دسته ها</label>
+                <select name="category" id="category">
+                    <option value="برنامه نویسی">برنامه نویسی</option>
+                    <option value="بازار های مالی">بازار های مالی</option>
+                    <option value="بازاریابی">بازاریابی</option>
+                    <option value="طراحی گرافیک">طراحی گرافیک</option>
+                    <option value="موسیقی">موسیقی</option>
+                </select>
+
+                <label>قیمت</label>
+                <input id="price-range-input" type="range" min="0" max="4000000" value="4000000"  step="50000" onmousemove="get_price()" onchange="get_price()">
+                <div class="price-range" id="price-range">
+                    <span>4000000</span> تومان
+                </div>
+            </section>
+            <section class="res">
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-2.jpg" alt="" srcset="">
+                            <div class="c-label off">25%</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-3.jpg" alt="" srcset="">
+                            <div class="c-label popular">پرطرفدار</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-4.jpg" alt="" srcset="">
+                            <div class="c-label popular">پرطرفدار</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-1.jpg" alt="" srcset="">
+                            <div class="c-label popular">پرطرفدار</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-5.jpg" alt="" srcset="">
+                            <div class="c-label popular">پرطرفدار</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-6.jpg" alt="" srcset="">
+                            <div class="c-label popular">پرطرفدار</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-7.jpg" alt="" srcset="">
+                            <div class="c-label off">10%</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+                <div class="res-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="../img/slider-8.jpg" alt="" srcset="">
+                            <div class="c-label popular">پرطرفدار</div>
+                        </a>
+                    </div>
+                    <h2><a href="#">دورۀ آموزش طراحی وب (فرانت اند)</a></h2>
+                    <div class="card-price">
+                        210.000 تومان
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+    
+        <section class="instagram-img container">
+            <img src="../img/instagram.jpg" alt="" srcset="">
+            <div class="content">
+                <h2>از آموزش ها با خبر شوید</h2>
+                <p>با دنبال کردن صفحۀ اینستاگرام ما از آخرین تخفیف ها و دوره ها مطلع شوید</p>
+                <div class="courses-btn"><a href="#">اینستاگرام</a></div>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="container flex space-between columns">
+            <div class="column">
+                <h2>نام وب سایت</h2>
+                <div>
+                    تماس با ما:<br> <span>021-88606060</span>
+                </div>
+                <div>
+                    آدرس:<br>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </div>
+            </div>
+            <div class="column">
+                <h2>دربارۀ ما</h2>
+                <ul>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>دربارۀ ما</h2>
+                <ul>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>دربارۀ ما</h2>
+                <ul>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>دربارۀ ما</h2>
+                <ul>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                    <li><a href="#">آیتم جدید</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container flex space-between align-center">
+                <div class="content">
+                    &copy تمام حقوق این سایت محفوظ می باشد
+                </div>
+                <div class="gotop">
+                    بالای صفحه
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+</html>

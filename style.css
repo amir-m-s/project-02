@@ -418,3 +418,129 @@ input {
     background: var(--icons-color);
     color: var(--primary-background);
 }
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 1110px) {
+    .top-bar div {
+        font-size: 0.75rem;
+    }
+    .menu-icon {
+        display: block;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .search {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .feedback {
+        right: 0;
+        bottom: 0%;
+    }
+
+    .instagram-img .content {
+        left: 0;
+    }
+
+    .courses-btn {
+        text-align: center;
+    }
+
+    .suggested-courses {
+        flex-direction: column;
+    }
+
+    .why-card {
+        max-width: 65vw;
+    }
+
+    .space-between {
+        justify-content: space-evenly;
+    }
+
+    .card img {
+        max-width: 33vw;
+    }
+    
+    /* Font sizes fix */
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    p {
+        font-size: 0.8rem !important;
+    }
+
+    .feedback div {
+        font-size: 0.7rem;
+    }
+
+    .suggested-courses h2 {
+        font-size: 1.3rem;
+    }
+
+    .card h2 {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 715px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-text {
+        order: 2;
+    }
+
+    .banner-img {
+        order: 1;
+    }
+
+    .instagram-img {
+        flex-direction: column;
+    }
+
+    .instagram-img .content {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .card img {
+        max-width: 50vw;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .top-bar {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .banner-img {
+        display: none;
+    }
+
+    .banner-text {
+        max-width: 60vw;
+    }
+}

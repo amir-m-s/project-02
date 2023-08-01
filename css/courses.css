@@ -92,3 +92,74 @@
     background: var(--icons-color);
     color: var(--text-color);
 }
+
+.course-header {
+    position: relative;
+    text-align: center;
+}
+
+.course-header img {
+    max-width: 45vw;
+}
+
+.info-card {
+    position: absolute;
+    background: #FFFFFF;
+    top: 5%;
+    right: 25%;
+}
+
+.info-card h2 {
+    padding: 0.5rem;
+}
+
+.info-card .price {
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+.info-card .buy-btn {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.info-card .buy-btn a {
+    display: block;
+    background: var(--foreground-color);
+    color: var(--icons-color);
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.info-card .buy-btn a:hover {
+    background: var(--icons-color);
+    color: var(--foreground-color);
+}
+
+.text-content {
+    padding: 1rem 0;
+}
+
+.text-content h2, .text-content h3 {
+    font-size: 1.5rem;
+    color: var(--foreground-color);
+    padding: 0.5rem 0;
+}
+
+.text-content p, .text-content ul {
+    font-size: 0.85rem;
+}
+
+.text-content ul {
+    list-style: disc;
+}
+
+.about-teacher .content {
+    align-items: center;
+    gap: 2rem;
+}
+
+.content img {
+    width: clamp(10rem, 10rem - 5vw, 5rem);
+}

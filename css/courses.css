@@ -163,3 +163,23 @@
 .content img {
     width: clamp(10rem, 10rem - 5vw, 5rem);
 }
+
+.no-comment {
+    text-align: center;
+}
+
+.no-comment h4 {
+    font-size: 1.5rem;
+}
+
+.no-comment div {
+    font-size: 1rem;
+}
+
+.comment-btn a {
+    background: var(--foreground-color);
+    color: var(--icons-color);
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}

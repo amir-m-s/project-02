@@ -353,6 +353,14 @@ input {
     margin: 3rem 0;
 }
 
+.ans {
+	display: none;
+}
+
+.faq-active > .ans{
+	display: block !important;
+}
+
 .instagram-img {
     position: relative;
     display: flex;

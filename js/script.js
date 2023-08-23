@@ -17,9 +17,16 @@ const answers = document.querySelectorAll(".ans");
 
 for (let i=0; i < questions.length; i++) {
 	questions[i].addEventListener("click", function (e) {
-		console.log(e.target);
 		this.classList.toggle("faq-active");
 	});
-	console.log(questions[i].nodeName);
 }
 
+// Website mobile menu
+const toggler = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu")
+toggler.addEventListener("click", () => {
+	if (!menu.classList.contains("active"))
+		menu.classList.add("active");
+	else
+		menu.classList.remove("active");
+});

@@ -514,6 +514,11 @@ input {
     
     .menu {
         display: none;
+        flex-direction: column;
+    }
+
+    .active {
+        display: block;
     }
     
     .search {

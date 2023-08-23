@@ -84,6 +84,14 @@ input {
     gap: 1rem;
 }
 
+.social-icons i {
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #fff ;
+}
+
 .top-bar a:hover {
     color: var(--icons-color);
 }
@@ -107,6 +115,14 @@ input {
     display: flex;
     font-size: 1rem;
     gap: 2rem;
+}
+
+.menu a {
+    transition: 0.2s ease-in-out;
+}
+
+.menu a:hover {
+    color: hsl(0, 0%, 56%);
 }
 
 .menu i {

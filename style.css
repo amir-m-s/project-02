@@ -352,6 +352,9 @@ input {
 .about-faq {
     margin: 3rem 0;
 }
+.question {
+	position: relative;
+}
 
 .ans {
 	display: none;
@@ -359,12 +362,66 @@ input {
 
 .faq-active > .ans{
 	display: block !important;
+	animation-name: answer-animation;
+	animation-duration: 0.6s;
+	position: absolute;
+	top: 85%;
+}
+
+@keyframes answer-animation{
+	0% {
+		position: absolute;
+		top: 0;
+		opacity: 0;
+	}
+	10% {
+		top: 5%;
+		opacity: 0.25;
+	}
+	20% {
+		top: 10%;
+		opacity: 0.3;
+	}
+	30% {
+		top: 20%;
+		opacity: 0.5;
+	}
+	40% {
+		top: 31%;
+		opacity: 0.6;
+	}
+	50% {
+		top: 50%;
+		opacity: 0.8;
+	}
+	60% {
+		top: 70%;
+		opacity: 0.9
+	}
+	70% {
+		top: 85%;
+		opacity: 1;
+	}
+	80%{
+		top: 85%;
+		opacity: 1;
+	}
+	90% {
+		top: 85%;
+		opacity: 1;
+	}
+	100% {
+		top: 85%;
+		opacity: 1;
+        position: static;
+    }
+
 }
 
 .instagram-img {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 

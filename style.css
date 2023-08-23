@@ -606,6 +606,17 @@ input {
         max-width: 50vw;
     }
 
+    .course-card {
+        flex-direction: column;
+    }
+
+    .course-card .course-text {
+        order: 2;
+    }
+    
+    .course-card .course-img {
+        order: 1;
+    }
 }
 
 @media (max-width: 450px) {

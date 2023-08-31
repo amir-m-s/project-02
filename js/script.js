@@ -30,3 +30,12 @@ toggler.addEventListener("click", () => {
 	else
 		menu.classList.remove("active");
 });
+
+// Go to top button
+const gtt_btn = document.querySelector(".gotop");
+
+function scroll_top() {
+	window.scrollTo({top: 0, behavior: "smooth"});
+}
+
+gtt_btn.addEventListener("click", scroll_top);

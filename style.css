@@ -504,7 +504,7 @@ input {
     display: none;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1024px) {
     .top-bar div {
         font-size: 0.75rem;
     }
@@ -584,7 +584,7 @@ input {
     }
 }
 
-@media (max-width: 715px) {
+@media (max-width: 768px) {
     .flex {
         flex-direction: column;
         align-items: center;
@@ -624,7 +624,7 @@ input {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .top-bar {
         display: none;
     }
